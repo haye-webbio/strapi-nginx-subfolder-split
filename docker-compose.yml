@@ -1,0 +1,11 @@
+services:
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - 80:80
+  server:
+    build:
+      context: .
+    ports:
+      - 1337:1337
